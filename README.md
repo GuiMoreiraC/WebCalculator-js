@@ -1,5 +1,7 @@
 # Web Calculator-js
 
+![captura](https://user-images.githubusercontent.com/99772555/215685199-dfabfd57-678e-4b1a-8049-9b9011d31532.gif)
+
 A simple calculator made with JavaScript, HTML and CSS.
 
 ## [Github pages link](https://guimoreirac.github.io/WebCalculator-js/)
