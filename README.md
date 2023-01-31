@@ -2,6 +2,8 @@
 
 A simple calculator made with JavaScript, HTML and CSS.
 
+## [Github pages link](https://guimoreirac.github.io/WebCalculator-js/)
+
 ## Attributes
 
 -   `display`: represents the display element on the calculator.
@@ -33,6 +35,8 @@ calculator.init();
 # Calculadora Web
 
 Uma calculadora simples feita com JavaScript, HTML e CSS.
+
+## [Github pages link](https://guimoreirac.github.io/WebCalculator-js/)
 
 ## Atributos
 
