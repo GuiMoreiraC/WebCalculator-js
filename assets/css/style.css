@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Press+Start+2P&display=swap');
+
+:root {
+  --primary-color: rgb(23, 138, 109);
+  --primary-color-darker: rgb(2, 19, 14);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.flex-container {
+  background: var(--primary-color);
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 30rem;
+  background: var(--primary-color-darker);
+  overflow: hidden;
+  border-radius: 10px;
+
+}
+
+.calculator {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.calculator-display-container {
+  position: relative;
+}
+
+.calculator-display, .calculator-message{
+  font-family: 'Press Start 2P', cursive;
+  text-align: right;
+  color: white;
+  
+}
+
+.calculator-display {
+  background: none;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+  font-size: 2rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.calculator-message {
+  height: 1rem;
+  font-size: 1rem;
+  padding-right: 1.5rem;
+  color: #8f99a5;
+}
+
+td {
+  padding: 0;
+}
+
+.btn {
+  width: 100%;
+  height: 5rem;
+  background-color: #b4b4b4;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bolder;
+  /* border-style: solid; */
+  border-width: 2px;
+
+}
+
+.btn-num,
+.btn-del {
+  background-color: #dfdfdf;
+}
+
+.btn-eq {
+  background-color: rgb(255, 182, 87);
+}
+
+.error{
+  color: crimson
+}
+
+
+
