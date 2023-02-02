@@ -107,6 +107,11 @@ td {
 @media only screen and (max-width: 600px) {
   .calculator-display {
     pointer-events: none;
+    font-size: 1rem;
+  }
+
+  .calculator-message {
+    font-size: 0.5rem;
   }
 
   .container {
@@ -115,6 +120,13 @@ td {
 
   .btn {
     height: 3.5rem;
+  }
+
+}
+
+@media only screen and (max-height: 550px) {
+  .btn {
+    height: 2.7rem;
   }
 
 }
