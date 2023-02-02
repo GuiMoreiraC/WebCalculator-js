@@ -5,12 +5,13 @@ const calculator = {
 
     //Methods
     init() {
+        this.clearDisplay();
         this.clickEvent();
         this.keyPress();
     },
     clickEvent() {
         document.addEventListener('click', e => {
-            if (this.btnClick(e, 'btn-num', 'btn-ope')) this.toDisplay(e.target.innerText);
+            if (this.btnClick(e, 'btn-num', 'btn-ope')) this.toDisplay(e);
             if (this.btnClick(e, 'btn-clear')) this.clearDisplay();
             if (this.btnClick(e, 'btn-del')) this.backspace();
             if (this.btnClick(e, 'btn-eq')) this.result();
@@ -45,8 +46,9 @@ const calculator = {
         }
         return false
     },
-    toDisplay(value) {
-        this.display.value += value;
+    toDisplay(element) {
+        this.display.value += element.target.innerText;
+        this.display.focus();
     },
     clearDisplay() {
         this.display.value = '';

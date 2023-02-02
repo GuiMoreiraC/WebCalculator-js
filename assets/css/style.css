@@ -104,5 +104,17 @@ td {
   color: crimson
 }
 
+@media only screen and (max-width: 600px) {
+  .calculator-display {
+    pointer-events: none;
+  }
 
+  .container {
+    width: 20rem;
+  }
 
+  .btn {
+    height: 3.5rem;
+  }
+
+}
