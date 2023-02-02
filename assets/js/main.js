@@ -47,8 +47,10 @@ const calculator = {
         return false
     },
     toDisplay(element) {
+        const isMobile = window.innerWidth <= 600;
+
         this.display.value += element.target.innerText;
-        this.display.focus();
+        if (!isMobile) this.display.focus();
     },
     clearDisplay() {
         this.display.value = '';
